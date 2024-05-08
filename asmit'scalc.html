@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asmit's Calculator</title>
+</head>
+<body>
+
+
+    <div>
+
+        <p>Input 1: <input type="text" id="input1" > </p> 
+        <p>Input 2: <input type="text" id="input2" > </p>  
+        <p>
+            Operator: 
+
+            <button onclick="asmitsaddition()">+</button> 
+            <button onclick="asmitssubtraction()">-</button> 
+            <button onclick="asmitsmultiplication()">*</button> 
+            <button onclick="asmitsdivision()">/</button>
+         </p> 
+        <p>Result:</p> <p id="res"></p>
+
+
+        <script>
+
+            function asmitsaddition(){
+
+                var x=parseFloat(document.getElementById("input1").value);
+                var y=parseFloat(document.getElementById("input2").value);
+
+                var z=x+y;
+
+                document.getElementById("res").innerHTML=x+"+"+y+"="+z;
+
+                 
+            }
+            function asmitssubtraction(){
+
+                  var x=parseFloat(document.getElementById("input1").value);
+                  var y=parseFloat(document.getElementById("input2").value);
+
+                  var z=x-y;
+
+                 document.getElementById("res").innerHTML=x+"-"+y+"="+z;
+
+ 
+            }
+            function asmitsmultiplication(){
+
+              var x=parseFloat(document.getElementById("input1").value);
+              var y=parseFloat(document.getElementById("input2").value);
+
+               var z=x*y;
+
+               document.getElementById("res").innerHTML=x+"*"+y+"="+z;
+
+
+            }
+            function asmitsdivision(){
+
+             var x=parseFloat(document.getElementById("input1").value);
+             var y=parseFloat(document.getElementById("input2").value);
+
+             var z=x/y;
+
+             document.getElementById("res").innerHTML=x+"/"+y+"="+z;
+
+
+}
+        </script>
+        <style>
+            
+        </style>
+
+     
+
+
+
+
+
+    </div>
+
+</body>
+</html>
